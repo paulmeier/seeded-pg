@@ -3,4 +3,4 @@
 *.log
 tmp/
 
-init-scripts/*.sql
+db/*.sql

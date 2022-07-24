@@ -1,0 +1,9 @@
+FROM postgres:alpine3.16
+
+RUN mkdir -p /tmp/psql_data/
+
+COPY db/structure.sql /tmp/psql_data/
+
+RUN chmod -R 777 /tmp/psql_data
+
+COPY scripts/init_docker_postgres.sh /docker-entrypoint-initdb.d/
