@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-wget -P db/ https://raw.githubusercontent.com/catherinedevlin/opensourceshakespeare/master/shakespeare.sql
+wget -O db/structure.sql https://raw.githubusercontent.com/catherinedevlin/opensourceshakespeare/master/shakespeare.sql
